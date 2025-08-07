@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#cabecalho{
+    background-color: bisque;
+    height: 100px;
+    padding: 10px;
+    /* Estruturar o leoiaute com Grid */
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    /*  Row| |coluns */
+    gap: 0px 100px;
+}
+#logo{
+    background-color: blue;
+}
+
+#menu_principal{
+    background-color: brown;
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    /* Organizar o aline e justify */
+    place-items: center end;
+}
+
+#itens_menu{
+    background-color: khaki;
+    height: 40px;
+    width: 60%
+    
+}
+
+#quem_sou{
+    background-color: beige;
+    height: 80vh;
+    padding:0px 5px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:0px 20px;
+}
+#informacoes_texto{
+    background-color: cadetblue;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:8fr 1fr 1fr;
+    gap: 10px 0px;
+
+}
+
+#titulo_info{
+    background-color: springgreen;
+    
+}
+
+#botao_info{
+    background-color: peru;
+    
+}
+#redes_sociais_info{
+    background-color: slateblue;
+
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    place-items: center start;
+    gap: 0px 5px;
+    
+}
+
+#insta_info{
+
+}
+
+#linkedin_info{
+
+}
+
+#facebook_info{
+
+}
+.classe_redes_sociais{
+    background-color: hotpink;
+    height: 50px;
+    width: 50px;
+    margin-left: 25px;
+}
+#foto{
+    background-color: lightblue;
+}
+
+#secao_principal_sobre{
+    height: 100vh;
+    background-color: blanchedalmond;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr;
+}
+#titulo_sobre{
+    background-color: rgb(0, 0, 82);
+    width: 30%;
+    height: 50%;
+    
+    place-self: center;
+}
+#dados_sobre{
+    background-color: rgb(0, 0, 82);
+    padding: 10px;
+
+
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+
+    gap: 10px;
+}
+#foto_sobre{
+    background-color: black;
+}
+#texto_sobre{
+    background-color: blueviolet;
+    height: 40%;
+    width: 90%;
+    place-self: center;
+}
+
+#secao_skills{
+    background-color: bisque;
+    height: 100vh;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr;
+}
+
+#titulo_skills{
+    background-color: blue;
+    height:50% ;
+    width: 30%;
+    place-self: center;
+}
+
+#sobre_skills{
+    background-color: darkgoldenrod;
+    height: 100%;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    gap: 0px 20px;
+}
+#div_textos_skills{
+    height: 100%;
+    background-color: darkgray;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 7fr;
+    gap: 10px 0px;
+}
+
+#textos_skills{
+    background-color: deeppink;
+}
+
+#secao_abilidades{
+    background-color: tomato;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 10px;
+}
+
+#foto_skills{
+    height: 60%;
+    width: 80%;
+    place-self: center;
+    background-color: forestgreen;
+}
+.abilidades{
+    background-color: blue;
+    height: 50px;
+    width: 90%;
+}
