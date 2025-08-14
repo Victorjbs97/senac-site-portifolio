@@ -175,8 +175,6 @@
 #redes_sociais_info{
     display: grid;
     grid-template-columns: 50px 50px 50px;
-    place-items: center start;
-    gap: 0px 5px;
     
 }
 
@@ -194,8 +192,7 @@
 .classe_redes_sociais{
     height: 50px;
     width: 50px;
-    margin-left: 25px;
-    
+    filter: invert(75%);
 }
 .classe_redes_sociais figure img{
     box-shadow: 2px 2px 5px color(srgb rgb(0, 0, 0) green blue);
