@@ -9,16 +9,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
 
 
 :root{
     /* Cores  */
-    --cor_primaria: #052d23;
+    --cor_primaria: #000000;
 
     /* Fontes */
 
     --fonte_logo:"Rubik Mono One", monospace;
-    --tamanho_logo: 1.3em;
+    --tamanho_logo: 2.5em;
 
     --fonte_menu_principal:"Rampart One", sans-serif;
 }
@@ -39,8 +41,10 @@
     /*  Row| |coluns */
     gap: 0px 100px;
 
-/*     border-bottom: 2px solid var(--cor_primaria); */
+    border-bottom: 0.2px solid var(--cor_primaria); 
     box-shadow: 1px 1px 5px #000000a2;
+
+
 }
 #logo{
     display: flex;
@@ -60,7 +64,7 @@
     "ELSH" 0,
     "ELXP" 0;
     font-size: var(--tamanho_logo);
-    text-shadow: 1px 2px 12px var(--cor_primaria);
+    /* text-shadow: 1px 2px 12px ; */
     text-align: center;
     text-transform: uppercase;
     color: var(--cor_primaria);
@@ -100,41 +104,75 @@
     /* border-bottom:3px solid var(--cor_primaria); */
     background-color:#ff2975;
     color: white;
-    cursor: crosshair;
+    cursor: pointer;
 }
-
+#quem_sou:hover{
+/*     background: linear-gradient(40deg, rgb(184, 24, 24), rgb(175, 15, 15), rgba(179, 0, 140, 0.575));
+ */}
 #quem_sou{
-    background-color: beige;
-    height: 80vh;
+    transition: 21s;
+
+    /*  
+        background-image: url('/midias/img/dragonite_perfil.webp');
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    */
+
+    background: linear-gradient(40deg, rgb(146, 25, 25), rgb(0, 0, 255), rgb(3, 255, 3));
+    background-attachment: fixed;
+
+/*     background: radial-gradient(rgb(15, 172, 36), rgb(26, 245, 37),rgb(0, 105, 0)); */
+
+
     padding:0px 5px;
 
-    display: none;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap:0px 20px;
+
+    justify-items: center;
 }
+
+
 #informacoes_texto{
-    background-color: cadetblue;
     padding: 10px;
 
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 0.5fr;
     grid-template-rows:8fr 1fr 1fr;
     gap: 10px 0px;
+
+    font-family: "DM Serif Text", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    font-size: 2rem;
 
 }
 
 #titulo_info{
-    background-color: springgreen;
-    
 }
-
 #botao_info{
-    background-color: peru;
-    
+    margin-bottom: 10px;
+}
+#botao_info button{
+    padding: 10px 30px;
+    border: none;
+    background-color: rgb(0, 112, 38);
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    /* Arredondamento de bordas */
+    border-radius: 5px;
+    box-shadow: rgb(255, 255, 255);
+
+}
+#botao_info button:hover{
+    cursor: pointer;
+    background-color:rgb(0, 87, 29);
 }
 #redes_sociais_info{
-    background-color: slateblue;
-
     display: grid;
     grid-template-columns: 50px 50px 50px;
     place-items: center start;
@@ -150,17 +188,30 @@
 
 }
 
-#facebook_info{
+#github_info{
 
 }
 .classe_redes_sociais{
-    background-color: hotpink;
     height: 50px;
     width: 50px;
     margin-left: 25px;
+    
+}
+.classe_redes_sociais figure img{
+    box-shadow: 2px 2px 5px color(srgb rgb(0, 0, 0) green blue);
+}
+.classe_redes_sociais:hover{
+    cursor: pointer;
+    opacity: 0.5;
 }
 #foto{
-    background-color: lightblue;
+    padding: 10px;
+
+}
+
+#foto figure img{
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px;
 }
 
 #secao_principal_sobre{
@@ -260,3 +311,4 @@
     height: 50px;
     width: 90%;
 }
+
