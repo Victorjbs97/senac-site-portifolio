@@ -33,7 +33,6 @@
 
 #cabecalho{
     background: #a3f7eb;
-    height: 100px;
     padding: 10px;
     /* Estruturar o leoiaute com Grid */
     display: grid;
@@ -43,7 +42,6 @@
 
     border-bottom: 0.2px solid var(--cor_primaria); 
     box-shadow: 1px 1px 5px #000000a2;
-
 
 }
 #logo{
@@ -109,9 +107,7 @@
 #quem_sou:hover{
 /*     background: linear-gradient(40deg, rgb(184, 24, 24), rgb(175, 15, 15), rgba(179, 0, 140, 0.575));
  */}
-#quem_sou{
-    transition: 21s;
-
+#quem_sou.desktop{
     /*  
         background-image: url('/midias/img/dragonite_perfil.webp');
         background-size:cover;
@@ -129,6 +125,20 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap:0px 20px;
+
+    justify-items: center;
+}
+
+#quem_sou.mobile{
+
+    background: linear-gradient(40deg, rgb(146, 25, 25), rgb(0, 0, 255), rgb(3, 255, 3));
+    background-attachment: fixed;
+
+    padding:0px 5px;
+
+    display: none;
+    grid-template-columns: 1fr;
     gap:0px 20px;
 
     justify-items: center;
@@ -309,3 +319,26 @@
     width: 90%;
 }
 
+/* Adaptação para mobile */
+
+@media (max-width: 800px) {
+
+    #cabecalho{
+        grid-template-columns: 1fr;
+    }
+    #menu_principal{
+        place-items: start center;
+    }
+    #itens_menu ul{
+        flex-direction: column;
+    }
+    #quem_sou.desktop{
+        display: none;
+    }
+
+    #quem_sou.mobile{
+        display: grid;
+    }
+
+
+}
